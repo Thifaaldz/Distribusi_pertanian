@@ -1,7 +1,7 @@
 -- Membuat database
 CREATE DATABASE IF NOT EXISTS perkebunan;
 USE perkebunan;
-drop database perkebunan;
+
 -- Tabel pengguna
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
