@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #fff; /* Latar putih */
+    border-bottom: 2px solid #000; /* Garis hitam di bawah */
+    padding: 10px 20px;
+}
+
+.header .logo {
+    height: 60px; /* Tinggi logo */
+    width: auto;
+    margin-right: 15px; /* Jarak antara logo dan teks */
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* Warna hitam */
+    margin: 0; /* Hilangkan margin default */
+}
+
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row div {
+    flex: 1;
+}
+
+button {
+    background-color: #5b8c5a;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a774a;
+}
+
+.summary {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.summary h3 {
+    margin: 0;
+}

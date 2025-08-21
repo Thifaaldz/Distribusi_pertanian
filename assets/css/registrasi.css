@@ -1,0 +1,209 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('../imgs/headers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Pop-up CSS */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Efek animasi pop-up muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup p {
+    margin: 10px 0;
+}
+
+.popup .close-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Animasi overlay */
+.overlay.active {
+    animation: fadeOverlay 0.3s forwards;
+}
+
+@keyframes fadeOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Tambahkan styling untuk logo berhasil */
+.popup img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+
+.register-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #93a51b27;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    background: linear-gradient(to bottom, rgba(0, 128, 0, 0.8), rgba(0, 128, 0, 0.6));
+    color: white;
+    padding: 40px;
+    text-align: center;
+    outline: auto;
+    outline-color: #ccccccb6;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.left-section .logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.left-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.left-section .promo-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(2.3);
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section h2 {
+    font-size: 22px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: white;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: green;
+    outline: none;
+}
+
+form button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+form button:hover {
+    background-color: darkgreen;
+}
+
+form p {
+    margin-top: 30px;
+}
